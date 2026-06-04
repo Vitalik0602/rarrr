@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Страница не найдена | РодничОК</title>
+
+<meta name="robots" content="noindex">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+.error-page{
+
+min-height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:
+linear-gradient(
+135deg,
+#DCEFFF,
+#FFFFFF,
+#DFF4EF);
+
+padding:40px 20px;
+
+text-align:center;
+
+overflow:hidden;
+
+position:relative;
+}
+
+.error-page::before{
+
+content:"";
+
+position:absolute;
+
+width:600px;
+height:600px;
+
+background:
+rgba(77,166,255,.08);
+
+border-radius:50%;
+
+top:-200px;
+right:-200px;
+}
+
+.error-page::after{
+
+content:"";
+
+position:absolute;
+
+width:500px;
+height:500px;
+
+background:
+rgba(106,196,143,.08);
+
+border-radius:50%;
+
+bottom:-200px;
+left:-200px;
+}
+
+.error-box{
+
+position:relative;
+z-index:2;
+
+max-width:700px;
+}
+
+.error-code{
+
+font-size:180px;
+font-weight:800;
+line-height:1;
+
+color:#3C8DFF;
+
+margin-bottom:20px;
+}
+
+.error-title{
+
+font-size:42px;
+
+margin-bottom:20px;
+}
+
+.error-text{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#64748b;
+
+margin-bottom:40px;
+}
+
+.error-buttons{
+
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.error-logo{
+
+width:180px;
+
+margin:0 auto 30px;
+}
+
+@media(max-width:768px){
+
+.error-code{
+
+font-size:120px;
+}
+
+.error-title{
+
+font-size:30px;
+}
+
+.error-text{
+
+font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="error-page">
+
+<div class="error-box">
+
+<img
+src="img/logo.png"
+alt="РодничОК"
+class="error-logo">
+
+<div class="error-code">
+
+404
+
+</div>
+
+<h1 class="error-title">
+
+Упс... Страница потерялась
+
+</h1>
+
+<p class="error-text">
+
+Похоже, что такой страницы не существует
+или она была перемещена.
+
+Но РодничОК всегда рядом 😊
+
+</p>
+
+<div class="error-buttons">
+
+<a href="index.html"
+class="btn btn-primary">
+
+На главную
+
+</a>
+
+<a href="contacts.html"
+class="btn btn-outline">
+
+Связаться с нами
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+
+</html>
