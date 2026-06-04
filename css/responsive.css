@@ -1,0 +1,373 @@
+/* ==========================================
+   responsive.css
+========================================== */
+
+/* =========================
+   1200px
+========================= */
+
+@media (max-width:1200px){
+
+    .container{
+        max-width:1000px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+}
+
+/* =========================
+   992px — мобильное меню
+========================= */
+
+@media(max-width:768px){
+
+    .header-container{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        min-height:75px;
+    }
+
+    .burger{
+        display:block;
+    }
+
+    .desktop-btn{
+        display:none;
+    }
+
+    .nav{
+        position:fixed;
+        top:75px;
+        left:-100%;
+        width:100%;
+        height:calc(100vh - 75px);
+        background:#fff;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:center;
+        padding-top:50px;
+        gap:25px;
+        transition:.35s;
+        box-shadow:0 20px 50px rgba(0,0,0,.08);
+    }
+
+    .nav.active{
+        left:0;
+    }
+
+    .nav a{
+        font-size:18px;
+    }
+
+    .logo img{
+        height:55px;
+        width:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-image{
+        max-width:550px;
+        margin:auto;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .directions-grid{
+        grid-template-columns:1fr;
+    }
+
+    .advantages-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .helper-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .reviews-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contacts-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .footer img{
+        margin:auto;
+    }
+
+    .hero{
+        padding-top:80px;
+        padding-bottom:80px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+    }
+
+    .section-header h2{
+        font-size:34px;
+    }
+
+    .direction-card{
+        padding:35px;
+    }
+
+    .direction-card h3{
+        font-size:24px;
+    }
+
+    .advantage-card{
+        padding:22px;
+        font-size:14px;
+    }
+
+    .diagnostic-box{
+        padding:50px 25px;
+    }
+
+    .diagnostic-box h2{
+        font-size:32px;
+    }
+
+    .helper-card{
+        font-size:20px;
+    }
+
+    .gallery-grid img{
+        height:220px;
+    }
+
+    .form-wrapper{
+        padding:35px 25px;
+    }
+
+}
+
+/* =========================
+   576px
+========================= */
+
+@media (max-width:576px){
+
+    section{
+        padding:70px 0;
+    }
+
+    .container{
+        padding:0 15px;
+    }
+
+    .hero h1{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-badge{
+        font-size:12px;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .section-header{
+        margin-bottom:40px;
+    }
+
+    .section-header h2{
+        font-size:28px;
+    }
+
+    .section-header p{
+        font-size:15px;
+    }
+
+    .advantages-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid img{
+        height:260px;
+    }
+
+    .review-card{
+        padding:25px;
+    }
+
+    .form-wrapper{
+        border-radius:20px;
+    }
+
+    .checkbox{
+        align-items:flex-start;
+    }
+
+}
+
+/* =========================
+   480px
+========================= */
+
+@media (max-width:480px){
+
+    .hero{
+        padding-top:60px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero-image{
+        max-width:100%;
+    }
+
+    .direction-card{
+        padding:25px;
+    }
+
+    .direction-icon{
+        font-size:50px;
+    }
+
+    .diagnostic-box h2{
+        font-size:26px;
+    }
+
+    .helper-card{
+        padding:25px;
+        font-size:18px;
+    }
+
+    .contacts-grid div{
+        padding:25px;
+    }
+
+}
+
+/* =========================
+   360px
+========================= */
+
+@media (max-width:360px){
+
+    .hero h1{
+        font-size:26px;
+    }
+
+    .section-header h2{
+        font-size:24px;
+    }
+
+    .btn{
+        padding:14px 18px;
+        font-size:14px;
+    }
+
+    .direction-card h3{
+        font-size:22px;
+    }
+
+    .diagnostic-box{
+        padding:35px 20px;
+    }
+
+}
+
+/* ==========================================
+   MOBILE MENU
+========================================== */
+
+.mobile-menu-btn{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    .mobile-menu-btn{
+        display:flex;
+        width:45px;
+        height:45px;
+        border:none;
+        background:var(--primary);
+        color:white;
+        border-radius:12px;
+        justify-content:center;
+        align-items:center;
+        cursor:pointer;
+    }
+
+}
+
+/* ==========================================
+   TOUCH DEVICES
+========================================== */
+
+@media (hover:none){
+
+    .btn:hover,
+    .direction-card:hover,
+    .gallery-grid img:hover{
+        transform:none;
+    }
+
+}
+
+/* ==========================================
+   LARGE SCREENS
+========================================== */
+
+@media (min-width:1600px){
+
+    .container{
+        max-width:1400px;
+    }
+
+    .hero h1{
+        font-size:72px;
+    }
+
+    .section-header h2{
+        font-size:52px;
+    }
+
+}
